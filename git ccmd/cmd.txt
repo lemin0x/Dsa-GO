@@ -1,0 +1,7 @@
+git init      
+git remote add origin url
+
+
+git fetch or git fetch origin 
+git checkout -b origin origin/main // switch from origin to main
+rm -rf sub/.git    // to remove the old submodule of git

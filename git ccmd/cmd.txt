@@ -5,3 +5,32 @@ git remote add origin url
 git fetch or git fetch origin 
 git checkout -b origin origin/main // switch from origin to main
 rm -rf sub/.git    // to remove the old submodule of git
+
+
+
+
+
+To quickly add your project to an existing GitHub repo, just follow these steps:
+
+Create a new GitHub repo that contains a README file.
+Use Git to clone the GitHub repo locally.
+Copy your project files into the folder created by the clone.
+Perform a git add . and a git commit.
+Push your changes up to GitHub.
+
+
+The proper way to push a new project into an existing GitHub repository follows these steps:
+
+Create a GitHub repository for the existing project.
+Copy the GitHub URL for the new repo to the clipboard.
+Perform a git init command in the root folder of the existing project.
+Add all of the existing project’s files to the Git index and then commit.
+Add the GitHub repo as a remote reference for the existing project.
+Perform a git push operation with the -u and -f switches.
+Verify that the existing project’s files have been pushed to GitHub.
+
+git init
+git add .
+git commit -m "Add existing project files to Git"
+git remote add origin 
+git push -u -f origin master
